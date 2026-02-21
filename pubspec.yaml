@@ -93,7 +93,7 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
   #letakan paling bawah 
-  flutter_launcher_icons:
-    android: true
-    ios: true
-    image_path: "assets/icon/app-icon.png"
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app-icon.png"
