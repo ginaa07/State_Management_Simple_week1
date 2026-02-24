@@ -42,29 +42,27 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
+          
+          floatingActionButton: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              FloatingActionButton(
+                onPressed: () {
+                  value.decrement();
+                },
+                tooltip: 'Decrement',
+                child: const Icon(Icons.remove),
+              ),
 
-          floatingActionButton: SizedBox(
-            width: double.infinity,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                FloatingActionButton(
-                  onPressed: () {
-                    value.decrement();
-                  },
-                  tooltip: 'Decrement',
-                  child: const Icon(Icons.remove),
-                ),
-
-                FloatingActionButton(
-                  onPressed: () {
-                    value.increment();
-                  },
-                  tooltip: 'Increment',
-                  child: const Icon(Icons.add),
-                ),
-              ],
-            ),
+              const SizedBox(width: 215),
+              FloatingActionButton(
+                onPressed: () {
+                  value.increment();
+                },
+                tooltip: 'Increment',
+                child: const Icon(Icons.add),
+              ),
+            ],
           ),
         );
       },
