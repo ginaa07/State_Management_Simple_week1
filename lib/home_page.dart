@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'counter_model.dart';
 import 'package:provider/provider.dart';
 
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -44,26 +43,28 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
 
-          floatingActionButton: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              FloatingActionButton(
-                onPressed: () {
-                  value.decrement();
-                },
-                tooltip: 'Decrement',
-                child: const Icon(Icons.remove),
-              ),
-              
-              const SizedBox(width: 10),
-              FloatingActionButton(
-                onPressed: () {
-                  value.increment();
-                },
-                tooltip: 'Increment',
-                child: const Icon(Icons.add),
-              ),
-            ],
+          floatingActionButton: SizedBox(
+            width: double.infinity,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                FloatingActionButton(
+                  onPressed: () {
+                    value.decrement();
+                  },
+                  tooltip: 'Decrement',
+                  child: const Icon(Icons.remove),
+                ),
+
+                FloatingActionButton(
+                  onPressed: () {
+                    value.increment();
+                  },
+                  tooltip: 'Increment',
+                  child: const Icon(Icons.add),
+                ),
+              ],
+            ),
           ),
         );
       },
