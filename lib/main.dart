@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stateman/home_page.dart';
-import 'counter_model.dart';
+import 'package:stateman/views/home_page.dart';
+import 'models/counter_model.dart';
 import 'package:provider/provider.dart';
 
 void main() {

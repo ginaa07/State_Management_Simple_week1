@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'counter_model.dart';
+import '../models/counter_model.dart';
 import 'package:provider/provider.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: const Icon(Icons.remove),
               ),
 
-              const SizedBox(width: 215),
+              const SizedBox(width: 220),
               FloatingActionButton(
                 onPressed: () {
                   value.increment();
