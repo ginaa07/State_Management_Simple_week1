@@ -1,3 +1,9 @@
 class CounterModel {
-  int count = 0;
+  int _angka = 0;
+
+  int get angka => _angka;
+  
+  void increment() {
+    _angka++;
+  }
 }
