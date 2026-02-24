@@ -45,9 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () {
-              setState(() {
-                CounterModel().increment();
-              });
+              value.increment();
             },
             tooltip: 'Increment',
             child: const Icon(Icons.add),
